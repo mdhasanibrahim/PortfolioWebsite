@@ -1,0 +1,57 @@
+.services {
+    padding-top: 5px;
+    margin: auto 5%;
+    font-family:"poppins", sans-serif;
+}
+.services .s-title {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: #399673;
+}
+.services .serv-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px;
+    justify-content: space-between;
+}
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    background: #c0c6c9;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover {
+    background-color: #80cfae;
+}
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0 7px 0;
+}
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box {
+    transform: scale(1.05);
+
+}
+@media(max-width: 1000px) {
+    .services .serv-content .card .text {
+        font-size: 20px;
+    }
+}
+@media(max-width: 900px) {
+    .services .serv-content {
+        flex-direction: column;
+    }
+    .services .serv-content .card {
+        width: 60%;
+        margin-bottom: 50px;
+    }
+}

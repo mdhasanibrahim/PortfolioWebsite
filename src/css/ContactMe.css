@@ -1,0 +1,71 @@
+.contact-me-page {
+    margin: auto 30%;
+}
+.c-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    color: #399673;
+}
+.column form .field {
+    display: flex;
+}
+.column form .field,
+.column form .field .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.column form .field-name {
+    margin-right: 10px;
+    width: 100%;
+}
+.column form .field-email {
+    margin-left: 10px;
+    width: 100%;
+}
+.column form .field input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: "poppins", sans-serif;
+}
+.textarea {
+    height: 80px;
+    width: 100%;
+}
+textarea{
+    height: 80px;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 15px 15px;
+    font-size: 17px;
+    font-family: "poppins", sans-serif;
+    resize: none;
+}
+.button {
+    height: 45px;
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 200px;
+    border: 2px solid #399673;
+    background: #399673;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover {
+    color: #399673;
+    background: none;
+}

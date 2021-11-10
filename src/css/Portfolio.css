@@ -1,0 +1,90 @@
+.portfolio {
+    align-items: center;
+    margin: 50px;
+    padding-top: 100px;
+    font-family: "Century Gothic", sans-serif;
+}
+.p-title {
+    color: #399673;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.p-intro {
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.p-line1 {
+    height: 5px;
+    width: 10%;
+    background-color: #72dab2;
+}
+.p-line2 {
+    height: 5px;
+    width: 25%;
+    background-color: #259e70;
+}
+.p-line3 {
+    height: 5px;
+    width: 50%;
+    background-color: #0d744c;
+}
+.p-line4 {
+    height: 5px;
+    width: 40%;
+    background-color: #18d48c;
+}
+.port-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px;
+    justify-content: space-between;
+}
+.port-content .card {
+    width: calc(33% - 20px);
+    height: 300px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.port-content #card1 {
+    background: url("../images/project1.jpg") no-repeat center;
+    background-size: cover;
+}
+.port-content #card2 {
+    background: url("../images/project2.jpg") no-repeat center;
+    background-size: cover;
+}
+.port-content #card3 {
+    background: url("../images/project3.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.port-content .card:hover {
+    transform: scale(1.05);
+}
+.port-content .card .text {
+    font-size: 25px;
+    font-weight: 800;
+    text-align: left;
+}
+.port-content .card .box {
+    transition: all 0.3s ease;
+}
+.port-content .card:hover .box {
+    transform: scale(1.05);
+    color: white;
+
+}
+@media(max-width: 900px) {
+    .port-content {
+        flex-direction: column;
+    }
+    .port-content .card {
+        width: 60%;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,101 @@
+.home {
+    display: flex;
+    background: url("../images/homepage.png") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 500px;
+    font-family: "Century Gothic", sans-serif;
+}
+.home .max-width {
+    margin: auto 0 auto 10px;
+    padding: 0 80px;
+}
+.text-1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: -50px;
+    margin-top: 300px;
+    color: #399673;
+}
+.text-2 {
+    font-family: "poppins";
+    font-size: 70px;
+    font-weight: 700;
+    margin-left: -50px;
+    display: flex;
+}
+.text-3 {
+    font-size: 32px;
+    margin-left: -50px;
+}
+.text-3 span{
+    color: #0b6845;
+    font-weight: 600;
+}
+.btn {
+    margin-left: -50px;
+    margin-top: 50px;
+}
+.hireMe-btn {
+    color: #fff;
+    font-weight: 540;
+	background: #399673;
+	padding: 20px;
+	border-radius: 5px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+}
+.hireMe-btn:hover {
+	background: #0b6845;
+	letter-spacing: 5px;
+	transition: all 0.4s ease 0s;
+}
+.text-2 div {
+    display: flex;
+}
+.text-2 div div {
+    display: flex;
+}
+.text-2 div span{
+    position: inherit;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+#alphabet-3 {
+    margin-right: 15px;
+}
+#alphabet-8 {
+    margin-right: 15px;
+}
+.text-2 div span:hover {
+    cursor: pointer;
+    animation-name: alphabet-dance;
+  }
+
+@keyframes alphabet-dance {
+	0%, 100%, 20%, 50%, 80% {
+		transform:translateY(0)
+	}
+	40% {
+		transform:translateY(-30px)
+	}
+	60% {
+		transform:translateY(-15px)
+	}
+}
+@media(max-width: 1000px) {
+    .text-1 {
+        margin-top: 200px;
+    }
+    .text-2 {
+        display: grid;
+    }
+}
+@media(max-width: 550px) {
+    .text-1 {
+        color: #0b6845;
+    }
+}
